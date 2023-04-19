@@ -1,0 +1,189 @@
+/* ===================================================================
+
+reset
+
+=================================================================== */
+html,
+body,
+#wrapper {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  line-height: 1;
+}
+
+div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video, input, textarea {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+article, aside, details, figcaption, figure, footer, header, menu, nav, section, div, address, iframe, canvas, hr, textarea {
+  display: block;
+  line-height: 1;
+}
+
+a, label {
+  cursor: pointer;
+}
+
+blockquote {
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+
+address, em {
+  font-style: normal;
+}
+
+hr {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+textarea {
+  resize: vertical;
+  overflow: hidden;
+  -webkit-appearance: none;
+  border: none;
+}
+
+input, button, select {
+  vertical-align: middle;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+  border-radius: 0px;
+  border: none;
+  cursor: pointer;
+  background: transparent;
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+}
+
+#video_wrapper #control {
+  zoom: 1;
+}
+#video_wrapper #control:before, #video_wrapper #control:after {
+  content: "";
+  display: block;
+}
+#video_wrapper #control:after {
+  clear: both;
+}
+
+#video_wrapper #control #playcontrol, #video_wrapper #control #volumecontrol, #video_wrapper #ended ul li, #video_wrapper #ended ul li div, #video_wrapper #ended ul li a {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+}
+
+#video_wrapper #control, #video_wrapper #control #panel {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#video_wrapper #control #panel, #video_wrapper #chapter li .caption, #video_wrapper #ended {
+  font-family: 'Lato', sans-serif;
+}
+
+#video_wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height:auto;
+  margin: 0;
+  padding: 0;
+}
+#video_wrapper #video {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+}
+#video_wrapper #control {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 10px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 100;
+}
+#video_wrapper #control > div {
+  float: left;
+}
+#video_wrapper #control #panel {
+  font-size: 16px;
+  font-size: 1.6rem;
+  position: relative;
+  margin-right: 18px;
+  padding: 0 15px;
+  height: 30px;
+  color: white;
+  font-weight: 200;
+  line-height: 28px;
+  letter-spacing: 1px;
+}
+#video_wrapper #control #playcontrol, #video_wrapper #control #volumecontrol {
+  margin: 0 10px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  background-image: url(../images/videocontrol.png);
+  background-repeat: no-repeat;
+}
+#video_wrapper #control #playcontrol.play, #video_wrapper #control #volumecontrol.play {
+  background-position: 0 2px;
+}
+#video_wrapper #control #playcontrol.stop, #video_wrapper #control #volumecontrol.stop {
+  background-position: -33px 2px;
+}
+#video_wrapper #control #playcontrol.volumeon, #video_wrapper #control #volumecontrol.volumeon {
+  background-position: -66px 2px;
+}
+#video_wrapper #control #playcontrol.mute, #video_wrapper #control #volumecontrol.mute {
+  background-position: -99px 2px;
+}
